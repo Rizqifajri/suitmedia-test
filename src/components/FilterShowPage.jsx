@@ -2,12 +2,12 @@ import React from "react";
 
 const FilterShowPage = ({ totalPage, setTotalPage, totalContent, setSortOption }) => {
   return (
-    <div className='container relative flex gap-5 justify-between mx-auto my-10 z-50'>
-      <p className='font-bold'>
+    <div className='container relative flex gap-5 justify-between mx-auto my-10 z-50 '>
+      <p className='font-bold text-sm'>
         Showing 1-{totalPage} of {totalContent} 
       </p>
       <div className='flex gap-5'>
-        <div>
+        <div className="text-sm">
           Show per page{" "}
           <select
             className='w-24 text-center align-middle px-2 py-1 border-2 rounded-full'
@@ -18,7 +18,7 @@ const FilterShowPage = ({ totalPage, setTotalPage, totalContent, setSortOption }
             <option value='30'>30</option>
           </select>
         </div>
-        <div>
+        <div className="text-sm">
           Sort by{" "}
           <select
             className='w-24 text-center align-middle px-2 py-1 border-2 rounded-full'
